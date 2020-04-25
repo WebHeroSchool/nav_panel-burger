@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Navigation bar</title>
+        <title>Navigation bar DEMO</title>
     </head>
     <body>
         <header>
@@ -12,12 +12,23 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Log in</a></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+              <input id="menu__toggle" type="checkbox" />
+              <label class="menu__btn" for="menu__toggle">
+                <span></span>
+              </label>
+              <ul class="menu__box">
+                <li><a class="menu__item" href="#">Pricing</a></li>
+                <li><a class="menu__item" href="#">HTML Tutorials</a></li>
+			          <li><a class="menu__item" href="#">CSS Tutorials</a></li>
+			          <li><a class="menu__item" href="#">Javascript Tutorials</a></li>
+			          <li><a class="menu__item" href="#">Newsletter</a></li>
+                <li><a class="menu__item" href="#">Blog</a></li>
+             </ul>
+           </div>
         </header>
         <main>
             <p id="main__text">Web development explained for normal people - Learn HTML, CSS and JavaScript in ways that you can actually understand!</p>
