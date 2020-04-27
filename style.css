@@ -7,6 +7,10 @@ body {
     padding: 30px;
 }
 
+.hamburger-menu {
+	visibility: hidden;
+}
+
 .header__img {
     height: 80px;
     margin-left: 60px;
@@ -44,30 +48,43 @@ header li a {
 }
 
 @media (max-width: 768px) {
-  #main__text {
-    font-size: 25px;
+  	#main__text {
+    	font-size: 25px;
   }
-  header li a {
-    font-size: 16px;
+  	header li a {
+    	font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  #main__text {
-    font-size: 20px;
+	.hamburger-menu {
+		visibility: visible;
   }
-  header li a{
-    font-size: 14px;
+	header li a {
+    	visibility: hidden;
   }
+  	#main__text {
+    	font-size: 20px;
+  }
+  	.menu__box li a {
+  		visibility: visible;
+  	}
 }
 
 @media (max-width: 320px) {
-  #main__text {
-    font-size: 16px;
+	.hamburger-menu {
+		visibility: visible;
   }
-  header li a {
-    font-size: 13px;
+  	header li a {
+    	visibility: hidden;
   }
+
+  	#main__text {
+    	font-size: 16px;
+  }
+  	.menu__box li a {
+  		visibility: visible;
+  	}
 }
 
 .menu__box {
